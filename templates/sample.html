@@ -10,5 +10,18 @@
         </li>
         {% endfor %}
     </ul>
+    <form action="/member" method="POST">
+        <label>名前</label>
+        <input type="text" name="member_name">
+        <label>部署</label>
+        <select name="department">
+            <option value="0">-選択してください-</option>
+            <option value="1">開発</option>
+            <option value="2">技術</option>
+            <option value="3">SE</option>
+            <option value="4">営業</option>
+        </select>
+        <input type="submit">
+    </form>
     </body>
 </html>
